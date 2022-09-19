@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-@font-face { font-family: VCR_OSD_MONO_1; src: url('VCR_OSD_MONO_1.001.ttf'); } 
-
 body {
   margin: 0;
   font-family: Arial;
@@ -19,7 +17,8 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
-  object-fit: fill;
+  min-width: 100%; 
+  min-height: 100%;
   z-index: -1;
 }
 
@@ -31,76 +30,22 @@ body {
   width: 100%;
   padding: 20px;
 }
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
 </style>
 </head>
+
+
+
+
 <body>
 
 <video autoplay muted loop id = "myVideo">
-<source src="test.mp4" type="video/mp4" style="width: 100%">
+<source src="test.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
-<style>
-    .container {
-      height: 950px;
-      position: relative;
-      border: 0px solid green;
-    }
-    
-    .vertical-center {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    .horizontal-center {
-      margin: 0;
-      position: absolute;
-      left: 40%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    .text_size {
-        font-size: 100px;
-        font-family: VCR_OSD_MONO_1;
-
-    }
-    .rectangle_1{
-        width: 1904px;
-        height: 500px;
-        border: 475px solid #000;
-        fill: red;
-        z-index: 1;
-    }
-    </style>
-    <div class="container">
-      <div class="vertical-center horizontal-center text_size">
-            <center>
-            [USER]
-            </center>
-      </div>
-    </div>
-
-
-    <div class = "rectangle_1">
-    </div>
-</script>
-
 </body>
+
+
+
+
 </html>
