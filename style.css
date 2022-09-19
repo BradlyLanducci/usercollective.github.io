@@ -30,3 +30,23 @@ body {
   width: 100%;
   padding: 20px;
 }
+
+.inputForm {
+    position: absolute;
+    width: 50%;
+    height: 4%;
+    font-size: 24px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    border: 0px;
+    font-family: oswald;
+}
+
+::placeholder
+{
+    color:white;
+    text-align: center;
+}
