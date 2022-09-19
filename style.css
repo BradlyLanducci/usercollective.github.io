@@ -52,7 +52,7 @@ body {
     position: absolute;
     width: 40%;
     height: 5%;
-    font-size: 15px;
+    font-size: 2vw;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
