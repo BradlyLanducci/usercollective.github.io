@@ -27,6 +27,18 @@ body {
   z-index: -1;
 }
 
+#myVideo2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
 .content {
   position: fixed;
   bottom: 0;
@@ -48,11 +60,23 @@ body {
     color: black;
     border: 0px;
     font-family: vcr;
+    text-align: center;
     
+}
+
+h1{
+  position: absolute;
+  font-size: 100px;
+  font-family: vcr;
+  color: white;
+  margin-top: 110vh;
+  left: 32.5%;
+  z-index: 2;
 }
 
 ::placeholder
 {
     color:black;
     text-align: center;
+    
 }
