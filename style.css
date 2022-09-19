@@ -24,7 +24,7 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 #myVideo2 {
@@ -61,16 +61,18 @@ body {
     border: 0px;
     font-family: vcr;
     text-align: center;
+    z-index: 2;
     
 }
 
 h1{
-  position: absolute;
-  font-size: 100px;
+  position: relative;
+  font-size: 4vw;
   font-family: vcr;
   color: white;
   margin-top: 110vh;
-  left: 32.5%;
+  display: block;
+  text-align:center;
   z-index: 2;
 }
 
