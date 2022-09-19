@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "vcr";
+    src: url("VCR_OSD_MONO_1.ttf");
+    }
+
 * {
   margin: 0;
   padding: 0;
@@ -34,15 +39,16 @@ body {
 .inputForm {
     position: absolute;
     width: 50%;
-    height: 4%;
-    font-size: 24px;
+    height: 5%;
+    font-size: 15px;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
     color: white;
     border: 0px;
-    font-family: oswald;
+    font-family: vcr;
+    
 }
 
 ::placeholder
