@@ -54,7 +54,7 @@ body {
     position: absolute;
     width: 40%;
     height: 5%;
-    font-size: 2vw;
+    font-size: 2vh;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -69,7 +69,7 @@ body {
 
 h1{
   position: relative;
-  font-size: 4vw;
+  font-size: 4vh;
   font-family: vcr;
   color: white;
   margin-top: 110vh;
