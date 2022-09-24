@@ -52,7 +52,7 @@ body {
 
 .inputForm {
     position: absolute;
-    width: 40%;
+    width: 25%;
     height: 5%;
     font-size: 2vh;
     top: 75%;
@@ -83,4 +83,10 @@ h1{
     color:black;
     text-align: center;
     
+}
+
+.mail
+{
+  color:red;
+  z-index: 3;
 }
