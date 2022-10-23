@@ -29,10 +29,11 @@
     <source src="house_resized.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
-
+  <a href={location.href} target='_blank' download>Open in browser</a>
 
   
   <script>
+    navigator.userAgent.includes("Instagram")
     function randomSong() {
       var songPick = Math.floor(Math.random() * 2);
       const cars = ["ASong1", "ASong2"];
