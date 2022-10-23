@@ -8,7 +8,7 @@
 
 
 <body>
-  <button id="ASong" style = 
+  <button id="ASong1" style = 
   "position:relative; height:200vh;width:100%;z-index:0;    background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -20,7 +20,9 @@
       src="music.mp3"
       autoplay
       loop
+      id = "audioSource"
     ></audio>
+
     SoSng
   </button>
   <video autoplay muted loop playsinline id = "myVideo">
@@ -31,7 +33,21 @@
 
   
   <script>
-    var aud = document.getElementById("ASong").children[0];
+    function randomSong() {
+      var songPick = Math.floor(Math.random() * 2);
+      const cars = ["ASong1", "ASong2"];
+      return cars[songPick];
+    }
+
+    var song1 = randomSong();
+    var aud = document.getElementById("ASong1").children[0];
+
+    //if (song1 == "ASong2") {
+    //    aud.src = "music2.mp3";
+    //}
+
+    var source = document.getElementById('audioSource');
+    console.log(song1);
     var isPlaying = false;
     aud.pause();
   
@@ -43,6 +59,8 @@
       }
       isPlaying = !isPlaying;
     }
+
+
   </script>
 
   <!-- <form action="#">
@@ -69,7 +87,8 @@
   </div>
 </form>
 </div>
-<h1 style = "z-index: 0; position:absolute;width:100%; top:0%;text-align: center;color:white;z-index:2;">users loading</h1>
+<h1 style = "z-index: 0; position:absolute;width:100%; top:0%;text-align: center;color:white;z-index:2;">[USER] Salv.E</h1>
+<h1 style = "z-index: 0; position:absolute;width:100%; top:5%;text-align: center;color:white;z-index:2;">more users loading</h1>
 
 <video autoplay muted loop playsinline id = "myVideo2">
   <source src="users_loading.mp4" type="video/mp4">
