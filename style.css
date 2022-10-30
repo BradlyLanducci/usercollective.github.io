@@ -99,3 +99,8 @@ h1{
   height: 100vh;
   color:red;
 }
+
+a {
+  color: White;
+  text-decoration: none;
+}
