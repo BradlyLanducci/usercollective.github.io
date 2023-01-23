@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "vcr";
+  src: url("VCR_OSD_MONO_1.ttf");
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "vcr";
+  src: url("VCR_OSD_MONO_1.ttf");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.videoPlayer {
+  width: 100%;
+}
+
+.soundButton {
+  position:relative; 
+  height:200vh;
+  width:100%;
+  z-index:11;    
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  border: none; 
+  cursor: pointer; 
+  overflow: hidden;  
+  outline: none; 
+  color: transparent;
+}
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -5;
+}
+
+.myVideo2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 100vh;
+  width: 100vw;
+  height: 101vh;
+  object-fit: cover;
+  max-width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inputText{
+  position: absolute; 
+  left: -5000px;
+}
+
+.optionalParent {
+  position:fixed;
+  z-index:-2;
+}
+
+.h1Name {
+  z-index: 0; 
+  position:absolute;
+  font-size: 3vh;
+  width:100vw; 
+  top:105vh;
+  text-align: center;
+  color:white;
+  z-index:11;
+}
+
+.h1Loading{
+  z-index: 0; 
+  position:absolute;
+  font-size: 3vh;
+  width:100vw; 
+  top:110vh;
+  text-align: center;
+  color:white;
+  z-index:2;
+}
+
+.mce-responses {
+  display: none;
+}
+
+.mce-responses-2 {
+  position: absolute; 
+  left: -5000px;
+}
+
+.mce-responses-3 {
+  position:fixed;
+  z-index:-2;
+}
+
+.inputForm {
+  position: absolute;
+  width: 25%;
+  height: 5%;
+  font-size: 2vh;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  border: 0px;
+  font-family: vcr;
+  text-align: center;
+  z-index: 2;
+}
