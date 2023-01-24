@@ -7,6 +7,7 @@ import song from "./music.mp3";
 import house from "./house_resized.mp4";
 import users from "./users_loading.mp4";
 import Salv_e from "./salv_e"
+import Omega from "./omega"
 
 var aud = new Audio(song);
 
@@ -14,11 +15,14 @@ function Home(props){
   return (
       <div>
           <h1 className = "h1Name">
+          <Link className = "userLink" to="/omega" onClick ={() => 
+              aud.pause()
+            }>[USER] omega</Link>
+
             <Link className = "userLink" to="/salv_e" onClick ={() => 
               aud.pause()
             }>[USER] Salv.E</Link>
           </h1>
-
           <h1 className = "h1Loading">more users loading</h1>
         <BackgroundVideo/>
         <BackgroundMusic/>
@@ -60,34 +64,40 @@ function BackgroundMusic(props) {
 }
 
 function BackgroundVideo(props) {
+
   return (
     <div>
       <video autoPlay muted loop playsInline className = "myVideo">
         <source src={house} type="video/mp4"/>
           Your browser does not support HTML5 video.
       </video>
+      <div>
+        <div id="mc_embed_signup">
+        <form action="https://github.us17.list-manage.com/subscribe/post?u=98ac01e3c7f4913ff392be408&amp;id=8f998f79d7&amp;f_id=00534fe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self">
+        <div id="mc_embed_signup_scroll">
 
-      <div id="mc_embed_signup">
-  <form action="https://github.us17.list-manage.com/subscribe/post?u=98ac01e3c7f4913ff392be408&amp;id=8f998f79d7&amp;f_id=00534fe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self">
-      <div id="mc_embed_signup_scroll">
-
-<div className="mc-field-group">
-<input type="email" name="EMAIL" className="required email inputForm" id="mce-EMAIL" required placeholder="ENTER THE VOID"/>
-<span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
-</div>
-<div id="mce-responses" className="clear foot">
-  <div className="response, mce-responses" id="mce-error-response"></div>
-  <div className="response, mce-responses" id="mce-success-response"></div>
-</div>
-  <div className = "mce-responses-2" aria-hidden="true">
-    <input type="text" name="b_98ac01e3c7f4913ff392be408_8f998f79d7" tabIndex="-1"/>
-    </div>
-      <div className="optionalParent">
-        <input type="submit" className = "mce-responses-3" name="subscribe" id="mc-embedded-subscribe"/>
+        <div className="mc-field-group">
+        <input type="email" name="EMAIL" className="required email inputForm" id="mce-EMAIL" required placeholder="ENTER THE VOID"/>
+        <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
+        </div>
+        <div id="mce-responses" className="clear foot">
+          <div className="response, mce-responses" id="mce-error-response"></div>
+          <div className="response, mce-responses" id="mce-success-response"></div>
+          </div>
+        <div className = "mce-responses-2" aria-hidden="true">
+          <input type="text" name="b_98ac01e3c7f4913ff392be408_8f998f79d7" tabIndex="-1"/>
+          </div>
+            <div className="optionalParent">
+              <input type="submit" className = "mce-responses-3" name="subscribe" id="mc-embedded-subscribe"/>
+            </div>
+        </div>
+        </form>
       </div>
-  </div>
-</form>
-</div>
+
+    </div>
+    <div className = "messageBox">
+        Enter your email address above to ENTER THE VOID.
+    </div>
     <UsersList/>
 
       <video autoPlay muted loop playsInline className = "myVideo2">
@@ -110,6 +120,7 @@ function App() {
           <Routes>
             <Route exact path = "/" element = {<Home/>} />
             <Route exact path = "/salv_e" element = {<Salv_e/> } />
+            <Route exact path = "/omega" element = {<Omega/> } />
           </Routes>
       </div>
     </Router>

@@ -19,11 +19,18 @@ body {
 }
 
 a {
-  color: white;
+  text-decoration: none;
+  color: black;
+  background: rgb(184, 234, 250);
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-  color: grey;
+  color: rgb(179, 179, 179);
+  box-shadow: 0 5px 15px black;
 }
 
 .videoPlayer {
@@ -98,9 +105,10 @@ a:hover {
 .h1Name {
   z-index: 0; 
   position:absolute;
-  font-size: 3vh;
-  width:100vw; 
-  top:110vh;
+  font-size: 5vh;
+  left: 35vw;
+  width:30vw; 
+  top:105vh;
   text-align: center;
   color:white;
   z-index:11;
@@ -111,7 +119,7 @@ a:hover {
   position:absolute;
   font-size: 3vh;
   width:100vw; 
-  top:115vh;
+  top:120vh;
   text-align: center;
   color:white;
   z-index:2;
@@ -138,9 +146,9 @@ a:hover {
   position: absolute;
   width: 25%;
   height: 5%;
-  font-size: 2vh;
-  top: 75%;
-  left: 50%;
+  font-size:2vw;
+  top: 75vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
   background-color: white;
   color: black;
@@ -156,6 +164,11 @@ a:hover {
   min-width: 100vw;;
   min-height: 100vh;
   z-index: 20;
+}
+
+.userLink {
+  display: block;
+  margin: 5px;
 }
 
 .userProfileBox {
@@ -230,4 +243,24 @@ a:hover {
   margin-left: 5%;
   margin-right: 5%;
   text-align:left;
+}
+
+.messageBox {
+  position: absolute;
+  background-color: white;
+  color:black;
+  font-size:3vw;
+  min-height: 10px;
+  top:100%;
+  width:100%;
+  height:auto;
+  z-index: 30;
+  opacity: 100;
+  animation: fadeBackground 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeBackground {
+  from { opacity: 100 }
+  to {  opacity: 0; }
 }
