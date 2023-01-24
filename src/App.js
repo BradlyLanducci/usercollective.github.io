@@ -8,12 +8,14 @@ import house from "./house_resized.mp4";
 import users from "./users_loading.mp4";
 import Salv_e from "./salv_e"
 
+var aud = new Audio(song);
+
 function Home(props){
   return (
       <div>
           <h1 className = "h1Name">
             <Link className = "userLink" to="/salv_e" onClick ={() => 
-              document.getElementById({song}).pause()
+              aud.pause()
             }>[USER] Salv.E</Link>
           </h1>
 
@@ -33,7 +35,6 @@ function UsersList(props) {
 }
 
 function BackgroundMusic(props) {
-  var aud = new Audio(song);
   var isPlaying = false;
   aud.pause();
 
