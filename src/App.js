@@ -1,7 +1,9 @@
 import './App.css';
 import React from "react";
 import {Link} from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import song from "./music.mp3";
 import house from "./house_resized.mp4";
@@ -110,20 +112,22 @@ function BackgroundVideo(props) {
 }
 
 function App() {
+  const location = useLocation();
   return (
-    <Router>
-
       <div className = "App">
-      <nav className = "navMenu">
-        <Link className = "homeButton" to="/">Home</Link>
-      </nav>
-          <Routes>
-            <Route exact path = "/" element = {<Home/>} />
-            <Route exact path = "/salv_e" element = {<Salv_e/> } />
-            <Route exact path = "/omega" element = {<Omega/> } />
-          </Routes>
+        <nav className = "navMenu">
+          <Link className = "homeButton" to="/">Home</Link>
+        </nav>
+        <TransitionGroup>
+        <CSSTransition key={location.key} classNames="fade" timeout={300}>
+        <Routes>
+          <Route exact path = "/" element = {<Home/>} />
+          <Route exact path = "/salv_e" element = {<Salv_e/> } />
+          <Route exact path = "/omega" element = {<Omega/> } />
+        </Routes>
+        </CSSTransition>
+      </TransitionGroup>
       </div>
-    </Router>
     )
 }
 

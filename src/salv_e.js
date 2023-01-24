@@ -5,6 +5,7 @@ import salve_img from "./images/rinse.jpg";
 
 function BackgroundVideo(props) {
     return (
+    <div className="page">
       <div>
         <video autoPlay muted loop playsInline className = "myVideo">
           <source src={house} type="video/mp4"/>
@@ -30,6 +31,7 @@ function BackgroundVideo(props) {
                     </a>
             </div>
         </div>
+      </div>
       </div>
     )
   }
