@@ -2,7 +2,6 @@ import React from "react"
 import "./index.css"
 import house from "./house_resized.mp4";
 import salve_img from "./images/rinse.jpg";
-import instagram_icon from "./images/instagram.png";
 
 function BackgroundVideo(props) {
     return (

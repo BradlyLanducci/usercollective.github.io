@@ -12,19 +12,21 @@ function Home(props){
   return (
       <div>
           <h1 className = "h1Name">
-            <Link className = "userLink" to="/salv_e">[USER] Salv.E</Link>
+            <Link className = "userLink" to="/salv_e" onClick ={() => 
+              document.getElementById('song').pause()
+            }>[USER] Salv.E</Link>
           </h1>
 
           <h1 className = "h1Loading">more users loading</h1>
         <BackgroundVideo/>
         <BackgroundMusic/>
       </div>
-  ) 
+  )
 }
 
 function UsersList(props) {
   return(
-    <div>      
+    <div>
 
     </div>
   )
@@ -40,7 +42,14 @@ function BackgroundMusic(props) {
       aud.pause();
     } else {
       aud.play();
+      aud.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+      aud.play();
     }
+
+
     isPlaying = !isPlaying;
   }
   return (
@@ -60,15 +69,15 @@ function BackgroundVideo(props) {
       <div id="mc_embed_signup">
   <form action="https://github.us17.list-manage.com/subscribe/post?u=98ac01e3c7f4913ff392be408&amp;id=8f998f79d7&amp;f_id=00534fe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self">
       <div id="mc_embed_signup_scroll">
-      
+
 <div className="mc-field-group">
-<input type="email" name="EMAIL" className="required email inputForm" id="mce-EMAIL" required placeholder="ENTER EMAIL"/>
+<input type="email" name="EMAIL" className="required email inputForm" id="mce-EMAIL" required placeholder="ENTER THE VOID"/>
 <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
 </div>
 <div id="mce-responses" className="clear foot">
   <div className="response, mce-responses" id="mce-error-response"></div>
   <div className="response, mce-responses" id="mce-success-response"></div>
-</div> 
+</div>
   <div className = "mce-responses-2" aria-hidden="true">
     <input type="text" name="b_98ac01e3c7f4913ff392be408_8f998f79d7" tabIndex="-1"/>
     </div>
@@ -99,7 +108,7 @@ function App() {
       </nav>
           <Routes>
             <Route exact path = "/" element = {<Home/>} />
-            <Route exact path = "/salv_e" element = {<Salv_e/>} />
+            <Route exact path = "/salv_e" element = {<Salv_e/> } />
           </Routes>
       </div>
     </Router>
