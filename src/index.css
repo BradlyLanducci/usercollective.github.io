@@ -117,6 +117,9 @@ a:hover {
   z-index:2;
 }
 
+.mc-field-group {
+  z-index: 45;
+}
 .mce-responses {
   display: none;
 }
@@ -129,7 +132,6 @@ a:hover {
 .mce-responses-3 {
   position:fixed;
   opacity: 0%;
-  z-index:-2;
 }
 
 .inputForm {
@@ -145,7 +147,7 @@ a:hover {
   border: 0px;
   font-family: vcr;
   text-align: center;
-  z-index: 2;
+  z-index: 20;
 }
 
 .userPage {
