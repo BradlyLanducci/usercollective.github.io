@@ -1,8 +1,34 @@
 import './App.css';
 import React from "react";
+import {Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import song from "./music.mp3";
 import house from "./house_resized.mp4";
 import users from "./users_loading.mp4";
+import Salv_e from "./salv_e"
+
+function Home(props){
+  return (
+      <div>
+          <h1 className = "h1Name">
+            <Link className = "userLink" to="/salv_e">[USER] Salv.E</Link>
+          </h1>
+
+          <h1 className = "h1Loading">more users loading</h1>
+        <BackgroundVideo/>
+        <BackgroundMusic/>
+      </div>
+  ) 
+}
+
+function UsersList(props) {
+  return(
+    <div>      
+
+    </div>
+  )
+}
 
 function BackgroundMusic(props) {
   var aud = new Audio(song);
@@ -52,8 +78,7 @@ function BackgroundVideo(props) {
   </div>
 </form>
 </div>
-      <h1 className = "h1Name">[USER] Salv.E</h1>
-      <h1 className = "h1Loading">more users loading</h1>
+    <UsersList/>
 
       <video autoPlay muted loop playsInline className = "myVideo2">
         <source src={users} type="video/mp4"/>
@@ -66,10 +91,19 @@ function BackgroundVideo(props) {
 
 function App() {
   return (
-  <div className="App">
-      <BackgroundMusic/>
-      <BackgroundVideo/>
-  </div>)
+    <Router>
+
+      <div className = "App">
+      <nav className = "navMenu">
+        <Link className = "homeButton" to="/">Home</Link>
+      </nav>
+          <Routes>
+            <Route exact path = "/" element = {<Home/>} />
+            <Route exact path = "/salv_e" element = {<Salv_e/>} />
+          </Routes>
+      </div>
+    </Router>
+    )
 }
 
 export default App;
