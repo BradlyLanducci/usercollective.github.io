@@ -13,7 +13,7 @@ function Home(props){
       <div>
           <h1 className = "h1Name">
             <Link className = "userLink" to="/salv_e" onClick ={() => 
-              document.getElementById('song').pause()
+              document.getElementById({song}).pause()
             }>[USER] Salv.E</Link>
           </h1>
 
