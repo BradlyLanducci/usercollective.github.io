@@ -1,7 +1,7 @@
 import React from "react"
 import "./index.css"
 import house from "./house_resized.mp4";
-import salve_img from "./images/rinse.jpg";
+import omega from "./images/omega.png";
 
 function BackgroundVideo(props) {
     return (
@@ -14,12 +14,12 @@ function BackgroundVideo(props) {
         <div className = "userProfileBox">
             
             <div className = "userProfileInfo">
-                <img className = "userProfilePic"src = {salve_img} alt = "salv.e"/>
+                <img className = "userProfilePic"src = {omega} alt = "salv.e"/>
                 
                 <p className = "userTextBox">
-                    [USER] Salv.E is an artist developed out of Oregon. Fusing various atmosphere's inspired by Oregon's beautiful landscape with dark electronic and hip hop beats.
+                    TBA
                 </p>
-                    <a href = "https://www.instagram.com/user_salv.e/">
+                    {/* <a href = "https://www.instagram.com/user_salv.e/">
                         <button className = "instagramButton"></button>
                     </a>
                     <a href = "https://open.spotify.com/artist/2DZqOc8UYa9lum2mOTnLPr?si=ICzH8GKcRU2nssZJ7RPpBg">
@@ -27,7 +27,7 @@ function BackgroundVideo(props) {
                     </a>
                     <a href = "https://www.youtube.com/channel/UCjJXBMyqP7vSNoAxeYp46rg">
                         <button className = "youtubeButton"></button>
-                    </a>
+                    </a> */}
             </div>
         </div>
       </div>

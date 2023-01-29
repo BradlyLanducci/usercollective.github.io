@@ -98,7 +98,7 @@ function BackgroundVideo(props) {
 
     </div>
     <div className = "messageBox">
-        Enter your email address above to ENTER THE VOID.
+        ENTER YOUR EMAIL FOR EXCLUSIVE UPDATES
     </div>
     <UsersList/>
 
