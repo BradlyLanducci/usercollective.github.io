@@ -17,11 +17,11 @@ function Home(props){
   return (
       <div>
           <h1 className = "h1Name">
-          <Link className = "userLink" to="/omega" onClick ={() => 
+          <Link className = "userLink navLinkBox" to="/omega" onClick ={() => 
               aud.pause()
             }>[USER] omega</Link>
 
-            <Link className = "userLink" to="/salv_e" onClick ={() => 
+            <Link className = "userLink navLinkBox" to="/salv_e" onClick ={() => 
               aud.pause()
             }>[USER] Salv.E</Link>
           </h1>
@@ -116,7 +116,7 @@ function App() {
   return (
       <div className = "App">
         <nav className = "navMenu">
-          <Link className = "homeButton" to="/">Home</Link>
+          <Link className = "homeButton navLinkBox" to="/">Home</Link>
         </nav>
         <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
