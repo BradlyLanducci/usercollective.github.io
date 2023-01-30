@@ -196,6 +196,15 @@ a:hover {
   background-size: cover;
 }
 
+.userOmegaPic {
+  float: center;
+  height: auto;
+  max-width: 1 0%;
+  border: 3px solid black;
+  margin-top: 5%;
+  background-size: cover;
+}
+
 .instagramButton {
   background-image: url(
   'images/instagram.png');
