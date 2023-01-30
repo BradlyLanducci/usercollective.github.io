@@ -14,7 +14,7 @@ function BackgroundVideo(props) {
         <div className = "userProfileBox">
             
             <div className = "userProfileInfo">
-                <img className = "userOmegaPic" src = {omega} alt = "salv.e"/>
+                <img className = "userOmegaPic" src = {omega} alt = "omega"/>
                 
                 <p className = "userTextBox">
                 USER OMEGA is a collective of creatives that range from beat production and songwriting to web design and visual aesthetics. They were established in 2022 via a Zoom meeting. They are spread across the United States in different locations with the same goal in bringing the [USER] experience to everyone that comes across their creations. 
