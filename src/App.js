@@ -121,7 +121,7 @@ function App() {
         <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
         <Routes>
-          <Route exact path = "/" element = {<Home/>} />
+          <Route exact path = "/*" element = {<Home/>} />
           <Route exact path = "/salv_e" element = {<Salv_e/> } />
           <Route exact path = "/omega" element = {<Omega/> } />
         </Routes>
