@@ -5,13 +5,20 @@ import { useLocation } from 'react-router-dom';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import song from "./music.mp3";
+import song1 from "./music.mp3";
+import song2 from "./music2.mp3";
 import house from "./house_resized.mp4";
 import users from "./users_loading.mp4";
 import Salv_e from "./salv_e"
 import Omega from "./omega"
 
-var aud = new Audio(song);
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+const songList = [song1, song2]
+
+var aud = new Audio(songList[getRandomInt(2)]);
 
 function Home(props){
   return (

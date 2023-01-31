@@ -22,7 +22,7 @@ function BackgroundVideo(props) {
                 
                 
                 <p className = "userTextBox">
-                    [USER] Salv.E is an artist developed out of Oregon. Fusing various atmosphere's inspired by Oregon's beautiful landscape with dark electronic and hip hop beats.
+                    [USER] Salv.E is an artist developed out of Oregon. Fusing various atmospheres inspired by Oregon's beautiful landscape with dark electronic and hip hop beats.
                 </p>
 
 
