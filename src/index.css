@@ -247,6 +247,20 @@ a:hover {
   border-color: transparent;
 }
 
+.soundcloudButton {
+  background-image: url(
+  'images/soundcloud.png');
+  background-size: cover;
+  border: 0px transparent;
+  height: auto;
+  left: 35%;
+  max-width: 5%;
+  position: absolute;
+  display:block;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .instagramButton:hover, .spotifyButton:hover, .youtubeButton:hover {
   opacity: 50%;
   cursor: pointer;

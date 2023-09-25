@@ -10,6 +10,7 @@ import song2 from "./music2.mp3";
 import house from "./house_resized.mp4";
 import users from "./users_loading.mp4";
 import Salv_e from "./salv_e"
+import FRNLiii from "./frnliii"
 import Omega from "./omega"
 
 function getRandomInt(max) {
@@ -26,11 +27,17 @@ function Home(props){
           <h1 className = "h1Name">
           <Link className = "userLink navLinkBox" to="/omega" onClick ={() => 
               aud.pause()
-            }>[USER] omega</Link>
+            }>[USER] omega
+          </Link>
 
-            <Link className = "userLink navLinkBox" to="/salv_e" onClick ={() => 
-              aud.pause()
-            }>[USER] Salv.E</Link>
+          <Link className = "userLink navLinkBox" to="/salv_e" onClick ={() => 
+            aud.pause()
+            }>[USER] Salv.E
+          </Link>
+          <Link className = "userLink navLinkBox" to="/frnliii" onClick ={() => 
+            aud.pause()
+            }>[USER] FRNLiii
+          </Link>
           </h1>
           <h1 className = "h1Loading">more users loading</h1>
         <BackgroundVideo/>
@@ -129,8 +136,9 @@ function App() {
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
         <Routes>
           <Route exact path = "/*" element = {<Home/>} />
-          <Route exact path = "/salv_e" element = {<Salv_e/> } />
           <Route exact path = "/omega" element = {<Omega/> } />
+          <Route exact path = "/salv_e" element = {<Salv_e/> } />
+          <Route exact path = "/frnliii" element = {<FRNLiii/> } />
         </Routes>
         </CSSTransition>
       </TransitionGroup>
