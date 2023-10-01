@@ -24,22 +24,19 @@ var aud = new Audio(songList[getRandomInt(2)]);
 function Home(props){
   return (
       <div>
-          <h1 className = "h1Name">
-          <Link className = "userLink navLinkBox" to="/omega" onClick ={() => 
-              aud.pause()
-            }>[USER] omega
-          </Link>
-
-          <Link className = "userLink navLinkBox" to="/salv_e" onClick ={() => 
-            aud.pause()
-            }>[USER] Salv.E
-          </Link>
-          <Link className = "userLink navLinkBox" to="/frnliii" onClick ={() => 
-            aud.pause()
-            }>[USER] FRNLiii
-          </Link>
-          </h1>
-          <h1 className = "h1Loading">more users loading</h1>
+        <h1 className="h1Name">
+          <div className="linkContainer">
+            <Link className="userLink navLinkBox" to="/omega" onClick={() => aud.pause()}>
+              [USER] omega
+            </Link>
+            <Link className="userLink navLinkBox" to="/salv_e" onClick={() => aud.pause()}>
+              [USER] Salv.E
+            </Link>
+            <Link className="userLink navLinkBox" to="/frnliii" onClick={() => aud.pause()}>
+              [USER] FRNLiii
+            </Link>
+          </div>
+        </h1>
         <BackgroundVideo/>
         <BackgroundMusic/>
       </div>
