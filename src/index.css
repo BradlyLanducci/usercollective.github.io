@@ -172,7 +172,7 @@ a:hover {
 }
 
 .userProfileBox {
-  margin-top:5vh;
+  margin-top:4.9vh;
   margin-left:10vw;
   width:80%;
   height:90%;
@@ -264,14 +264,13 @@ a:hover {
 }
 
 .userTextBox {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   position: relative;
-  font-size:15px;
+  font-size:2vw;
+  opacity: 100%;
   color: white;
-
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 17.5%;
-  margin-right: 17.5%;
+  text-align: left;
+  margin: 5%;
 }
 
 .messageBox {
@@ -322,15 +321,46 @@ transition: opacity 150ms linear;
   max-width: 80%;
 }
 
+@media (max-width: 500px) {
+  .spotifyPlayer {
+    width: 100%;
+    height: 300px;
+  }
+
+  .userProfilePic {
+    max-width: 50%; /* Adjust the width as needed for mobile */
+    margin-top: 10px; /* Adjust margin for mobile */
+  }
+
+  .spotifyButton .youtubeButton .soundcloudButton .instagramButton {
+    max-width: 50%; /* Adjust the width as needed for mobile */
+    margin-top: 10px; /* Adjust margin for mobile */
+  }
+
+  .userTextBox {
+    font-size: 4vw;
+  }
+
+}
+
 @media (max-width: 280px) {
   .spotifyPlayer {
     width: 100%;
     height: 300px;
   }
-}
 
-@media (max-width: 280px) {
-  .userTextBox {
-    font-size: 10px;
+  .userProfilePic {
+    max-width: 50%; /* Adjust the width as needed for mobile */
+    margin-top: 10px; /* Adjust margin for mobile */
   }
+
+  .spotifyButton .youtubeButton .soundcloudButton .instagramButton {
+    max-width: 50%; /* Adjust the width as needed for mobile */
+    margin-top: 10px; /* Adjust margin for mobile */
+  }
+
+  .userTextBox {
+    font-size: 5vw;
+  }
+
 }
