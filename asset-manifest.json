@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.5e9a6f9c.css",
-    "main.js": "./static/js/main.0633607d.js",
+    "main.css": "./static/css/main.d9924711.css",
+    "main.js": "./static/js/main.49082362.js",
     "static/js/787.4ea4bedf.chunk.js": "./static/js/787.4ea4bedf.chunk.js",
     "static/media/music.mp3": "./static/media/music.c81f06270b65093368da.mp3",
     "static/media/music2.mp3": "./static/media/music2.4087ffb5df01014bae5c.mp3",
-    "static/media/users_loading.mp4": "./static/media/users_loading.699f59e4a31d1f103be6.mp4",
+    "static/media/users_loading3.mp4": "./static/media/users_loading3.aee6d1c44bc8f0428868.mp4",
     "static/media/house_resized.mp4": "./static/media/house_resized.af247fd8208de232469a.mp4",
     "static/media/rinse.jpg": "./static/media/rinse.e8482a125f4967e66204.jpg",
     "static/media/VCR_OSD_MONO_1.ttf": "./static/media/VCR_OSD_MONO_1.10cf96d54dcd9af0486c.ttf",
@@ -15,12 +15,12 @@
     "static/media/omega.png": "./static/media/omega.c5fb01b3c14a25a9970e.png",
     "static/media/youtube.png": "./static/media/youtube.67cc9a9abc4c89f64a25.png",
     "index.html": "./index.html",
-    "main.5e9a6f9c.css.map": "./static/css/main.5e9a6f9c.css.map",
-    "main.0633607d.js.map": "./static/js/main.0633607d.js.map",
+    "main.d9924711.css.map": "./static/css/main.d9924711.css.map",
+    "main.49082362.js.map": "./static/js/main.49082362.js.map",
     "787.4ea4bedf.chunk.js.map": "./static/js/787.4ea4bedf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e9a6f9c.css",
-    "static/js/main.0633607d.js"
+    "static/css/main.d9924711.css",
+    "static/js/main.49082362.js"
   ]
 }
