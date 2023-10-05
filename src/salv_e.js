@@ -35,6 +35,7 @@ function BackgroundVideo(props) {
                     <a href = "https://www.youtube.com/channel/UCjJXBMyqP7vSNoAxeYp46rg">
                         <img className = "youtubeButton" alt = "instagram" src={youtube} />
                     </a> 
+                
                 <iframe title = "Salv.E Spotify" className = "spotifyPlayer" src="https://open.spotify.com/embed/album/5rOIYOEDWgi213kke9CDuf?utm_source=generator&theme=0" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                 </div>

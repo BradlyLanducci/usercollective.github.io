@@ -8,7 +8,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import song1 from "./music.mp3";
 import song2 from "./music2.mp3";
 import house from "./house_resized.mp4";
-import users from "./users_loading.mp4";
+import users from "./users_loading3.mp4";
 import Salv_e from "./salv_e"
 import FRNLiii from "./frnliii"
 import Omega from "./omega"
@@ -111,7 +111,7 @@ function BackgroundVideo(props) {
     <div className = "messageBox">
         ENTER YOUR EMAIL FOR EXCLUSIVE UPDATES
     </div>
-    <UsersList/>
+    {/* <UsersList/> */}
 
       <video autoPlay muted loop playsInline className = "myVideo2">
         <source src={users} type="video/mp4"/>

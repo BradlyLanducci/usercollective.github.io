@@ -125,6 +125,12 @@ a:hover {
   z-index:11;
 }
 
+.linkContainer {
+  background-color: black; /* Set the background color to black */
+  padding: 10px; /* Add padding to give it some spacing */
+  border-radius: 5px; /* Optionally, add rounded corners */
+}
+
 .mc-field-group {
   z-index: 45;
 }
@@ -274,19 +280,20 @@ a:hover {
 }
 
 .messageBox {
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
   background-color: white;
-  color:black;
-  font-size:3vw;
+  color: black;
+  font-size: 3vw;
   min-height: 10px;
-  top:80%;
-  width:100%;
-  height:auto;
+  bottom: 0; /* Set to the bottom of the viewport */
+  width: 100%;
+  height: auto;
   z-index: 30;
   opacity: 100;
   animation: fadeBackground 8s;
   animation-fill-mode: forwards;
 }
+
 
 @keyframes fadeBackground {
   from { opacity: 100 }
@@ -315,7 +322,8 @@ transition: opacity 150ms linear;
 
 .spotifyPlayer {
   border-radius: 6px; 
-  margin-top: 8%;
+  margin-top: 10%;
+  margin-bottom:5%;
   width: 500px;
   height: 400px;
   max-width: 80%;
@@ -334,7 +342,7 @@ transition: opacity 150ms linear;
 
   .spotifyButton .youtubeButton .soundcloudButton .instagramButton {
     max-width: 50%; /* Adjust the width as needed for mobile */
-    margin-top: 10px; /* Adjust margin for mobile */
+    margin: 10px; /* Adjust margin for mobile */
   }
 
   .userTextBox {
